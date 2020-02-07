@@ -22,8 +22,8 @@ class Dashboard extends Component {
                     <p>price</p>
                     <input></input>
                    
-                    <button onClick={ () => this.props.deleteProduct(id)}>Cancel</button>
-                    <button>Add to Inventory</button>
+                    <button onClick={() => this.props.deleteProduct(id)}>Cancel</button>
+                    <button onClick={() => this.props.addProduct(id) }>Add to Inventory</button>
                 </div>
 
             </section>

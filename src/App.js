@@ -10,10 +10,11 @@ class App extends Component {
     super();
 
     this.state = {
-        products:[]
+        product:[]
     }
   }
 
+  //GET
   componentDidMount() {  
     axios.get('/api/search') 
     .then(response => {
@@ -23,12 +24,19 @@ class App extends Component {
     })
   }
 
-  deleteShow = (id) => {
+  //POST
+
+  //PUT
+
+  //DELETE
+  deleteProduct = (id) => {
     axios.delete(`/api/cancel/${id}`)
     .then(res =>{
       this.setState({product: res.data})
     })
   }
+
+
 
   render() {
     return (
