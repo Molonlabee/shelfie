@@ -1,0 +1,9 @@
+section {
+display: flex;
+border: 2px solid black;
+}
+
+.green-box {
+    display:flex;
+    flex-direction: column;
+}
